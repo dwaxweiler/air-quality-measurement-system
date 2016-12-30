@@ -1,4 +1,9 @@
 # Air quality measurement system
+
+System based on Raspberry Pi and GrovePi to display temperature, humidity and other air quality parameters
+
+Released under The MIT License, see LICENSE.txt file for more details
+
 Built with:
 * [Raspberry Pi 1 Model B](https://www.raspberrypi.org/products/model-b/)
 * USB power adapter for the Pi
