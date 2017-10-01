@@ -14,7 +14,7 @@ import sys, time
 AIR_SENSOR_PORT = 0 # Grove air quality sensor analog port
 DHT_SENSOR_PORT = 7 # Grove DHT sensor digital port
 DHT_SENSOR_TYPE = 0 # Grove DHT sensor sensor type (0 = DHT11 = blue one = part
-                    # of GrovePi+ Starter Kit)
+                    # of GrovePi+ Starter Kit, 1 = white one)
 UPDATE_DISPLAY_FREQUENCY = 7 # Interval after that the display can be updated
                              # in seconds
 
@@ -86,7 +86,8 @@ while True:
         # Get temperature and humidity from the DHT sensor.
         [temperature, humidity] = dht(DHT_SENSOR_PORT, DHT_SENSOR_TYPE)
         airQuality = analogRead(AIR_SENSOR_PORT)
-        # Uncomment the three following lines if you want to follow the
+
+        # Uncomment the three following lines if you want to see the
         # measurements on the console.
         #print("temperature = " + str(temperature) + "C\thumidity = "
         #      + str(humidity) + "%")
